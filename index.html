@@ -50,18 +50,12 @@
 				<section>
 					<h2>Table of contents</h2>
 					<ol>
-						<li>Web Standards</li>
 						<li>HTML Basics</li>
 						<li>CSS: An Overview</li>
 						<li>CSS Selectors</li>
 						<li>CSS Layout</li>
 						<li>Do It Yourself</li>
 					</ol>
-				</section>
-
-				<section>
-					<h2>Web Standards</h2>
-					<p>웹 표준이란</p>
 				</section>
 
 				<section data-background="lib/img/construction.png" data-background-size="90%" data-background-transition="zoom">
@@ -76,8 +70,568 @@
 				</section>
 
 				<section>
+					<section data-background="lib/img/csszengarden.png" data-background-size="90%" data-background-transition="fade">
+					</section>
+
+					<section data-background="lib/img/csszengarden-1.png" data-background-size="90%" data-background-transition="fade">
+					</section>
+
+					<section data-background="lib/img/csszengarden-2.png" data-background-size="90%" data-background-transition="fade">
+					</section>
+
+					<section data-background="lib/img/csszengarden-3.png" data-background-size="90%" data-background-transition="fade">
+					</section>
+
+					<section data-transition="fade">
+						<h2>CSS Zen Garden</h2>
+						<p class="fragment">1 HTML</p>
+						<p class="fragment">218 CSS Layout</p>
+						<img src="lib/img/csszengarden-list.png" alt="" class="fragment">
+					</section>
+				</section>
+
+				<section>
+					<h2>Themes</h2>
+					<p>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
 					<h2>HTML이란?</h2>
-					<p>웹 페이지를 만들기 위한 언어</p>
+					<ul>
+						<li><strong class="fragment highlight-red">HT</strong> - <strong class="fragment highlight-red">H</strong>yperText : 문서와 문서가 링크로 연결되어 있다.</li>
+						<li><strong class="fragment highlight-red">M</strong> - <strong class="fragment highlight-red">M</strong>arkup : 태그로 이루어져있다.</li>
+						<li><strong class="fragment highlight-red">L</strong> - <strong class="fragment highlight-red">L</strong>anguage</li>
+					</ul>
+					<p class="fragment">웹 페이지를 만들기 위한 언어로 웹 브라우저 위에서 동작하는 언어</p>
+				</section>
+
+				<section>
+					<h2>HTML Tag란?</h2>
+					<p class="fragment">컨텐츠를 감싸서 그 정보의 성격와 의미를 정의한다.</p>
+					<p>
+						<pre><code class="fragment">&lt;태그명 속성명1="속성값1" 속성명2="속성값2"&gt; 컨텐츠 &lt;/태그명&gt;</code></pre>
+					</p>
+					<p>
+						<pre><code class="fragment">&lt;a href="http://www.jobkorea.co.kr/" target="_blank"&gt;잡코리아&lt;/a&gt;</code></pre>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>HTML의 구조</h2>
+						<ul>
+							<li>HTML문서의 확장자는 .html 혹은 .htm이다.</li>
+							<li>문서의 맨 앞에는 DTD(Document Type Definition)를 선언한다.</li>
+							<li>최상위 태그는 &lt;html&gt;을 사용한다.</li>
+							<li>&lt;head&gt;태그는 문서를 설명하는 태그로 제목이나 키워드와 같은 정보를 담는다.</li>
+							<li>&lt;body&gt;태그는 문서의 내용이 위치한다.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>XHTML1.0의 전체 문서 구조</h2>
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8"&gt;
+	&lt;title>제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>HTML5의 전체 문서 구조</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title>제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>DTD(Document Type Definition)</h2>
+						<p>브라우저는 DTD의 선언을 확인하고 브라우저 모드를 결정.</p>
+						<p>DTD를 올바르게 선언하지 않을 경우 CSS가 의도하지 않은 결과로 랜더링 될 수 있으므로 올바른 문서 형식을 선언해주는 것은 다양한 웹 브라우저에 따른 랜더링 차이를 최소화할 수 있는 가장 기본적이면서 중요한 것.</p>
+					</section>
+
+					<section>
+						<h2>Quirks Mode VS. Strict Mode</h2>
+						<p><img data-src="lib/img/dtd.png" alt=""></p>
+					</section>
+
+					<section>
+						<h2>대표적인 DTD</h2>
+						<ul>
+							<li>HTML4.01</li>
+							<li>XHTML1.0</li>
+							<li>HTML5</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>XHTML1.0 DTD와 문서 구조</h2>
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8"&gt;
+	&lt;title>제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h2>HTML5 DTD와 문서 구조</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title>제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<h2>HEAD tag</h2>
+					<p>문서에 대한 각종 정보 및 CSS, Javasript등이 위치하는 곳</p>
+
+<pre><code>&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title>제목&lt;/title&gt;
+	&lt;link rel="stylesheet" href="reset.css"&gt;
+	&lt;script src="jquery.js">&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<section>
+						<h2>BODY tag</h2>
+						<p>웹 페이지의 내용들이 위치하는 태그.</p>
+<pre><code>&lt;body&gt;
+	&lt;div class="reveal"&gt;
+		&lt;div class="slides"&gt;
+			&lt;section&gt;
+				&lt;h1&gt;HTML &amp; CSS Basic&lt;/h1&gt;
+				&lt;p&gt;
+					&lt;small&gt;UI기술팀 김정윤&lt;/small&gt;
+				&lt;/p&gt;
+			&lt;/section&gt;
+			&lt;section&gt;
+				&lt;h2&gt;Table of contents&lt;/h2&gt;
+				&lt;ol&gt;
+					&lt;li&gt;Web Standards&lt;/li&gt;
+					&lt;li&gt;CSS Layout&lt;/li&gt;
+					&lt;li&gt;Do It Yourself&lt;/li&gt;
+				&lt;/ol&gt;
+			&lt;/section&gt;
+			... 중략 ...
+&lt;/body&gt;
+</code></pre>
+					</section>
+
+					<section>
+						<h2>block-level VS. inline element</h2>
+						<ul>
+							<li><strong>block-level element</strong>
+								<ul>
+									<li>한줄에 하나의 엘리먼트만 표시되는 종류의 엘리먼트</li>
+									<li>다른 인라인 엘리먼트 뿐 아니라 블록 레벨 엘리먼트도 컨텐츠로 포함할 수 있다.</li>
+									<li>DIV, H1~H6, P, FORM, UL, LI, ADDRESS, BLOCKQUOTE, FIELDSET, TABLE, HR 등</li>
+								</ul>
+							</li>
+							<li>
+								<strong>inline element</strong>
+								<ul>
+									<li>한줄에 여러 개의 엘리먼트가 표시되는 종류의 엘리먼트</li>
+									<li>일라인 엘리먼트만 포함 할 수 있고, 블록레벨 엘리먼트의 자식이어야 한다.</li>
+									<li>span, a, img, em, strong 등</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>링크</h2>
+						<p>문서에서 다른 문서로 이동할 수 있는 수단을 의미한다.</p>
+						<p>
+							<pre><code>&lt;태그명 속성명1="속성값1" 속성명2="속성값2"&gt; 컨텐츠 &lt;/태그명&gt;</code></pre>
+						</p>
+						<p>
+							<pre><code>&lt;a href="http://www.jobkorea.co.kr/" target="_blank"&gt;잡코리아&lt;/a&gt;</code></pre>
+						</p>
+					</section>
+
+					<section>
+						<h2>문단</h2>
+						<pre><code>&lt;p&gt;문단&lt;/p&gt;</code></pre>
+						<pre><code>
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
+&lt;p&gt;Rerum, rem est commodi architecto facere.&lt;/p&gt;
+&lt;p&gt;Velit veniam dolorem accusantium illum nisi?&lt;/p&gt;
+&lt;p&gt;Nulla ullam, cupiditate iusto. Laboriosam, iusto.&lt;/p&gt;
+						</code></pre>
+
+						<ul>
+							<li>P는 paragraph의 약자</li>
+							<li>문단을 구분할 때 사용함</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>이미지</h2>
+						<pre><code>&lt;img src="이미지가 위치하는 URL" alt="대체텍스트" width="폭" height="높이" longdesc="링크" /&gt;</code></pre>
+						<pre><code>&lt;img src="http://farm7.staticflickr.com/6234/7abbf0_s.jpg" width="50" height="50" alt="이미지" /&gt;</code></pre>
+						<ul>
+							<li>src : source의 약자로 이미지가 위치하는 URL을 기술한다.</li>
+							<li>alt : alternative의 약자로 한국어로는 대체 텍스트라고 부른다. 이미지가 로딩되기 전이나, 이미지를 로딩할 수 없는 경우 이미지의 위치에 텍스트가 표시된다. 시각장애인을 위한 장치와 검색엔진에서도 사용된다.</li>
+							<li>width, height : 이미지의 크기</li>
+							<li>longdesc : 이미지와 관련된 링크</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>목록</h2>
+						<p>목록이란 연관된 항목들을 열거할 때 사용합니다.</p>
+						<p>&lt;ol&gt;&lt;/ol&gt;이나 &lt;ul&gt;&lt;/ul&gt; 태그로 감싸고</p>
+						<p>각 항목은 &lt;li&gt;&lt;/li&gt;로 표현합니다.</p>
+
+<pre><code><!-- 순서가 없는 리스트(Unordered List) -->
+&lt;ul&gt;
+    &lt;li&gt;항목1&lt;/li&gt;
+    &lt;li&gt;항목2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- 순서가 있는 리스트(ordered List) --&gt;
+&lt;ol&gt;
+    &lt;li&gt;항목1&lt;/li&gt;
+    &lt;li&gt;항목2&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<h2>CSS(Cascading Style Sheets)</h2>
+					<p>HTML이 문서의 구조와 컨텐츠를 담당한다면</p>
+					<p>CSS는 옷과 액서사리와 같은 꾸미는 역할을 담당합니다.</p>
+<pre><code>p{
+    font-size: 110%;
+    font-family: garamond, sans-serif;
+}
+h2{
+    color: red;
+    background: white;
+}
+.highlight{
+    color: red;
+    background: yellow;
+    font-weight: bold;
+}
+
+#test_id {
+    color: blue;
+    background: white;
+}</code></pre>
+				</section>
+
+				<section>
+					<h2>CSS 기본 구조</h2>
+					<p>
+						<pre><code>Selector {Property: Value; Property: Value;}</code></pre>
+					</p>
+					<p>
+						<pre><code>h1 {color:red; font-weight:bold;}</code></pre>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>HTML에 CSS 추가하기</h2>
+						<ul>
+							<li>
+									<strong>inline 방식</strong>
+									<ul>
+										<li>tag에 style을 직접 기술하는 방식</li>
+										<li>selector가 필요 없다</li>
+										<li>코드가 많아지고, 구조와 표현이 분리라는 CSS의 취지에 벗어난다.</li>
+										<li>유지보수가 어렵다.</li>
+									</ul>
+							</li>
+							<li>
+								<strong>style tag 방식</strong>
+								<ul>
+									<li>style tag에 기술하는 방식</li>
+									<li>다른 페이지에 영향을 미치지 않고 손쉽게 적용할 수 있다.</li>
+									<li>구조와 표현이 분리된다.</li>
+									<li>공통 페이지에 적용이 어렵고, cache를 사용할 수 없다.</li>
+								</ul>
+							</li>
+							<li>
+								<strong>외부 파일 방식</strong>
+								<ul>
+									<li>CSS를 별도 파일로 분리해서 링크하는 방식</li>
+									<li>공통 페이지에 적용할 수 있고, cache를 사용하므로 경제적이다.</li>
+									<li>유지보수가 용이하다.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>inline 방식</h2>
+						<ul>
+							<li>tag에 style을 직접 기술하는 방식</li>
+							<li>selector가 필요 없다</li>
+							<li>코드가 많아지고, 구조와 표현이 분리라는 CSS의 취지에 벗어난다.</li>
+							<li>유지보수가 어렵다.</li>
+						</ul>
+<pre><code>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HTML&amp;CSS Basic&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1 style="color:red"&gt;사내 강의&lt;/h1&gt;
+		&lt;p&gt;HTML, CSS를 배위보아요!&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</section>
+
+					<section>
+						<h2>style tag 방식</h2>
+						<ul>
+							<li>style tag에 기술하는 방식</li>
+							<li>다른 페이지에 영향을 미치지 않고 손쉽게 적용할 수 있다.</li>
+							<li>구조와 표현이 분리된다.</li>
+							<li>공통 페이지에 적용이 어렵고, cache를 사용할 수 없다.</li>
+						</ul>
+<pre><code>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HTML&amp;CSS Basic&lt;/title&gt;
+		&lt;style&gt;
+		h1 {
+			color:red;
+		}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;사내 강의&lt;/h1&gt;
+		&lt;p&gt;HTML, CSS를 배위보아요!&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</section>
+
+					<section>
+						<h2>외부 파일 방식</h2>
+						<ul>
+							<li>CSS를 별도 파일로 분리해서 링크하는 방식</li>
+							<li>공통 페이지에 적용할 수 있고, cache를 사용하므로 경제적이다.</li>
+							<li>유지보수가 용이하다.</li>
+						</ul>
+<pre><code>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HTML&amp;CSS Basic&lt;/title&gt;
+		&lt;link rel="stylesheet" href="style.css"&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;사내 강의&lt;/h1&gt;
+		&lt;p&gt;HTML, CSS를 배위보아요!&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Selector</h2>
+						<p>CSS가 적용될 태그를 지정</p>
+						<p>
+							<pre><code>Selector {Property: Value; Property: Value;}</code></pre>
+						</p>
+						<p>
+							<pre><code>h1 {color:red; font-weight:bold;}</code></pre>
+						</p>
+					</section>
+
+					<section>
+						<h2>ID Selector</h2>
+						<p class="fragment highlight-red">#idName {Property: Value;}</p>
+						<ul>
+							<li>tag의 ID값을 기준으로 식별</li>
+							<li>주로 한번만 사용되는 레이아웃이나 JS와의 연동을 위해 사용</li>
+						</ul>
+<pre><code>&lt;style&gt;
+	#wrap {
+		float:left;
+		width:960px;
+	}
+&lt;/style&gt;
+&lt;div id="wrap"&gt;
+	Contents
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Class Selector</h2>
+						<p class="fragment highlight-red">.className {Property: Value;}</p>
+						<ul>
+							<li>tag에 공통적으로 style을 적용하기 위해 사용</li>
+							<li>공백으로 구분된 여러 개의 class가 표시될 수 있음.</li>
+						</ul>
+<pre><code>&lt;style&gt;
+	.memo {
+		color:red;
+	}
+	.box {
+		border: 1px solid red
+	}
+&lt;/style&gt;
+&lt;div id="memo box"&gt;
+	red
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Type Selector</h2>
+						<p class="fragment highlight-red">tagName {Property: Value;}</p>
+						<ul>
+							<li>특정 태그명을 가진 엘리먼트 전체를 제어하기 위해 사용</li>
+						</ul>
+<pre><code>&lt;style&gt;
+	h1 {
+		color:red;
+	}
+&lt;/style&gt;
+&lt;h1&gt;
+	사내교육
+&lt;/h1&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Descent Selector(하위 선택자)</h2>
+						<p class="fragment highlight-red">Selector Selector {Property: Value;}</p>
+						<ul>
+							<li>특정 엘리먼트의 하위에 나오는 엘리먼트를 선택하는데 사용</li>
+							<li>부모가 먼저 선언하고 자식을 나중에 선언</li>
+							<li>공백을 통해 부모와 자식을 구분</li>
+						</ul>
+						<pre><code>
+&lt;style&gt;
+	.logo a {
+		color:red;
+	}
+&lt;/style&gt;
+&lt;div class="logo"&gt;
+	&lt;a href="http://www.jobkorea.co.kr/">잡코리아&lt;/a&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Selector 중복 적용</h2>
+						<p class="fragment highlight-red">Selector, Selector {Property: Value;}</p>
+						<ul>
+							<li>하나의 CSS선언을 여러 엘리먼트에 적용하고자 할때 사용</li>
+							<li>선택자와 선택자를 콤마(,)로 구분</li>
+						</ul>
+						<pre><code>
+&lt;style&gt;
+	.logo, memo {
+		color:red;
+	}
+&lt;/style&gt;
+&lt;div class="logo"&gt;
+	&lt;a href="http://www.jobkorea.co.kr/">잡코리아&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class="momo"&gt;
+	memo
+&lt;/p&gt;
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>CSS Layout</h1>
+					</section>
+
+					<section>
+						<h2>float</h2>
+						<ul>
+							<li>엘리먼트를 원하는 위치(좌우)로 이동시킨다.</li>
+							<li>레이아웃을 구성할 때 자주 사용된다.</li>
+							<li>float을 해재하기 위해서는 clear 속성을 사용한다.</li>
+						</ul>
+<pre><code>
+&lt;style&gt;
+	ul li {float:left;}
+	a {clear:left;}
+&lt;/style&gt;
+&lt;ul&gt;
+	&lt;li class="list_1"&gt;list_1&lt;/li&gt;
+	&lt;li class="list_2"&gt;list_2&lt;/li&gt;
+	&lt;li class="list_3"&gt;list_3&lt;/li&gt;
+	&lt;li class="list_4"&gt;list_4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href="#">더보기&lt;/a&gt;
+</code></pre>
+					</section>
+
+					<section>
+						<h2>position</h2>
+						<ul>
+							<li>position: relative</li>
+							<li>position: absolute</li>
+							<li>position: fixed</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h1>Do It Yourself</h1>
 				</section>
 			</div>
 
