@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>division</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+	function MM_showHideLayers() { //v3.0
+        var i, p, v, obj, args = MM_showHideLayers.arguments;
+        for (i = 0; i < (args.length - 2); i += 3)
+            if ((obj = MM_findObj(args[i])) != null) {
+                v = args[i + 2];
+                if (obj.style) {
+                    obj = obj.style;
+                    v = (v == 'show') ? 'visible' : (v = 'hide') ? 'hidden' : v;
+                }
+                obj.visibility = v;
+            }
+    }
+	</script>
+	<base href="http://www.semantic.pe.kr/example/mest/original/images/" target="_blank">
+</head>
+<body>
+	<table border="0" cellspacing="0" cellpadding="0" width="370">
+          <tr>
+              <td width="1"><img src="notice_tit_00.gif" width="1" height="22"></td>
+              <td width="66">
+                  <a href="#" onFocus=blur()><img src="notice_tit_01on.gif" width="66" height="22" border="0"></a>
+              </td>
+              <td width="66">
+                  <a href="#" onFocus=blur()><img src="notice_tit_02off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','show','news03','','hide','news04','','hide')" border="0"></a>
+              </td>
+              <td width="66">
+                  <a href="#" onFocus=blur()><img src="notice_tit_03off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','hide','news03','','show','news04','','hide')" border="0"></a>
+              </td>
+              <td width="66">
+                  <a href="#" onFocus=blur()><img src="notice_tit_04off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','hide','news03','','hide','news04','','show')" border="0"></a>
+              </td>
+              <td align="right" valign="bottom" background="notice_tit_bg.gif" width="105">
+                  <a href="#"><img src="more.gif" width="33" height="12" border="0"></a>
+              </td>
+          </tr>
+      </table>
+</body>
+</html>

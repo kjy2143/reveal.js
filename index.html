@@ -75,6 +75,88 @@
 					</section>
 
 					<section>
+						<h2>Tab Menu - Table Layout</h2>
+						<iframe src="../lib/html/division.html" width="370" height="22" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background:#fff;"> </iframe>
+						<pre><code>
+&lt;table border="0" cellspacing="0" cellpadding="0" width="370"&gt;
+	&lt;tr&gt;
+        &lt;td width="1"&gt;&lt;img src="notice_tit_00.gif" width="1" height="22"&gt;&lt;/td&gt;
+        &lt;td width="66"&gt;
+            &lt;a href="#" onFocus=blur()&gt;&lt;img src="notice_tit_01on.gif" width="66" height="22" border="0"&gt;&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td width="66"&gt;
+            &lt;a href="#" onFocus=blur()&gt;&lt;img src="notice_tit_02off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','show','news03','','hide','news04','','hide')" border="0"&gt;&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td width="66"&gt;
+            &lt;a href="#" onFocus=blur()&gt;&lt;img src="notice_tit_03off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','hide','news03','','show','news04','','hide')" border="0"&gt;&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td width="66"&gt;
+            &lt;a href="#" onFocus=blur()&gt;&lt;img src="notice_tit_04off.gif" width="66" height="22" onMouseOver="MM_showHideLayers('news01','','hide','news02','','hide','news03','','hide','news04','','show')" border="0"&gt;&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="right" valign="bottom" background="notice_tit_bg.gif" width="105"&gt;
+            &lt;a href="#"&gt;&lt;img src="more.gif" width="33" height="12" border="0"&gt;&lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Tab Menu - CSS Layout</h2>
+						<p>
+							<iframe src="../lib/html/division-1.html" width="370" height="22" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background:#fff;"> </iframe>
+						</p>
+						<iframe src="../lib/html/division-2.html" width="370" height="120" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background:#fff;"> </iframe>
+						<pre><code>
+&lt;div class="notice_wrap"&gt;
+	&lt;ul class="tab notice"&gt;
+		&lt;li class="notice"&gt;&lt;a href="#"&gt;공지사항&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="appointment"&gt;&lt;a href="#"&gt;인사발령&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="recruit"&gt;&lt;a href="#"&gt;채용&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="bid"&gt;&lt;a href="#"&gt;입찰&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p class="more"&gt;
+		&lt;a href="#"&gt;more&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Tab Menu - CSS Layout</h2>
+						<iframe src="../lib/html/division-1.html" width="370" height="22" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background:#fff;"> </iframe>
+						<pre><code>
+&lt;style&gt;
+.notice_wrap {position:relative; width:370px; border-bottom:1px solid #c2c2c1;}
+.tab {width:264px; height:22px; margin-bottom:-1px; padding-left:1px; background:url('../img/division-1.png') no-repeat 0 0;}
+.tab.appointment {background-position:0 -22px;}
+.tab.recruit {background-position:0 -44px;}
+.tab.bid {background-position:0 -66px;}
+	.tab li {float:left; }
+		.tab li a {display:block; width:66px; height:22px; text-indent:-999em;}
+.more {position:absolute; top:8px; right:0; background:url('../img/division-1.png') no-repeat 0 -88px;}
+	.more a {display:block; width:30px; height:10; text-indent:-999em;}
+&lt;/style&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Tab Menu - CSS Layout</h2>
+						<iframe src="../lib/html/division-1.html" width="370" height="22" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background:#fff;"> </iframe>
+						<pre><code>
+&lt;script&gt;
+$(document).ready(function() {
+	$('.tab > li').on('mouseover', function() {
+		$(this).parent()
+			.attr('class', 'tab')
+			.addClass($(this).attr('class'))
+	});
+});
+&lt;/script&gt;
+						</code></pre>
+					</section>
+
+					<section>
 						<h2>CSS Layout의 장점</h2>
 						<ul>
 							<li>웹 표준 방식의 CSS Layout은 콘텐트가 논리적으로 선형화 됩니다.</li>
@@ -86,16 +168,20 @@
 				</section>
 
 				<section>
-					<section data-background="lib/img/csszengarden.png" data-background-size="90%" data-background-transition="fade">
+					<section>
+						<iframe src="http://www.csszengarden.com/215/" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 					</section>
 
-					<section data-background="lib/img/csszengarden-1.png" data-background-size="90%" data-background-transition="fade">
+					<section>
+						<iframe src="http://www.csszengarden.com/188/" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 					</section>
 
-					<section data-background="lib/img/csszengarden-2.png" data-background-size="90%" data-background-transition="fade">
+					<section>
+						<iframe src="http://www.csszengarden.com/197/" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 					</section>
 
-					<section data-background="lib/img/csszengarden-3.png" data-background-size="90%" data-background-transition="fade">
+					<section>
+						<iframe src="http://www.csszengarden.com/193/" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 					</section>
 
 					<section data-transition="fade">
@@ -250,6 +336,12 @@
 <pre><code>&lt;head&gt;
 	&lt;meta charset="UTF-8"&gt;
 	&lt;title>제목&lt;/title&gt;
+	&lt;meta name="description" content="구인 구인 검색 엔진, 취업 정보, 채용 정보, 구직 정보, 구인 정보, 취업 가이드, 원 클릭 취업 검색, 경력 관리,잡코리아, JOKOREA, 헤드헌팅, 파견·대행, 아웃소싱, 인재파견, 채용대행, 위탁도급, 파견임시, 교육, 교육과정, 교육정보, 교육기관, 취업박람회, 채용박람회"&gt;
+	&lt;meta name="keywords" content="jobkorea, 구인, 구직, 취업, 등록, 신문기사, 고용, 대기업, 채용, 기업, 검색, 컴퓨터, 정보통신, 웹마스터, 네트웍, 서버관리, 웹 디자인, 웹 마케팅, 컨텐트개발, 정보검색/사서직, 인터넷영업, 서버구축, 데이터베이스, 디자인, 편집디자인, MAC 편집, 제품 디자인, 산업 디자인, CAD, CAM, 웹 디자인, 캐릭터, 애니메이션, 프로그래머, 정보제공(IP/CP), 기술 영업, 통신 기술, 시스템 분석/설계, 정보통신강사, 하드웨어, 사무직, 관리직, 경리, 회계, 재무, 마케팅, 영업, 무역, 해외영업, 사무직, 기획, 총무, 인사, 홍보, 비서직, 프리랜서/아르바이트, 장애인, 외국인업체, 자원봉사, 노무직,잡코리아, JOKOREA, 헤드헌팅, 파견·대행, 아웃소싱, 인재파견, 채용대행, 위탁도급, 파견임시, 교육, 교육과정, 교육정보, 교육기관, 취업박람회, 채용박람회"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+
+	&lt;link rel="SHORTCUT ICON" href="http://jts.jobkorea.co.kr/favicon.ico"&gt;
+
 	&lt;link rel="stylesheet" href="reset.css"&gt;
 	&lt;script src="jquery.js">&lt;/script&gt;
 &lt;/head&gt;
@@ -288,16 +380,16 @@
 							<li><strong>block-level element</strong>
 								<ul>
 									<li>한줄에 하나의 엘리먼트만 표시되는 종류의 엘리먼트</li>
-									<li>다른 인라인 엘리먼트 뿐 아니라 블록 레벨 엘리먼트도 컨텐츠로 포함할 수 있다.</li>
-									<li>DIV, H1~H6, P, FORM, UL, LI, ADDRESS, BLOCKQUOTE, FIELDSET, TABLE, HR 등</li>
+									<li><a href="http://codepen.io/kjy2143/pen/pJNKVy" target="_blank">다른 인라인 엘리먼트 뿐 아니라 블록 레벨 엘리먼트도 컨텐츠로 포함할 수 있다.</a></li>
+									<li><a href="http://codepen.io/kjy2143/pen/BNQVrg" target="_blank">DIV</a>, H1~H6, P, FORM, UL, LI, ADDRESS, BLOCKQUOTE, FIELDSET, TABLE, HR 등</li>
 								</ul>
 							</li>
 							<li>
 								<strong>inline element</strong>
 								<ul>
 									<li>한줄에 여러 개의 엘리먼트가 표시되는 종류의 엘리먼트</li>
-									<li>일라인 엘리먼트만 포함 할 수 있고, 블록레벨 엘리먼트의 자식이어야 한다.</li>
-									<li>span, a, img, em, strong 등</li>
+									<li><a href="http://codepen.io/kjy2143/pen/xGRzjP" target="_blank">인라인 엘리먼트만 포함 할 수 있고</a>, 블록레벨 엘리먼트의 자식이어야 한다.</li>
+									<li><a href="http://codepen.io/kjy2143/pen/NqbzMW" target="_blank">span</a>, a, img, em, strong 등</li>
 								</ul>
 							</li>
 						</ul>
@@ -608,6 +700,84 @@ h2{
 	memo
 &lt;/p&gt;
 						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>CSS Stying</h1>
+					</section>
+
+					<section>
+						<h2>텍스트 꾸미기</h2>
+						<p>텍스트를 꾸미기 위해서는 감싸는 태그가 필요하며 <br>일반적으로 span tag를 사용한다. </p>
+						<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8" &gt;
+        <style>
+        .life {
+        		color:green;
+        }
+        </style>
+    &lt;/head&gt;
+    &lt;body&gt;
+        할지라도 그들의 관현악이며, 사는가 있음으로써 &lt;span class="life"&gt;생명&lt;/span&gt;을 힘있다.
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/kjy2143/pen/gpLKBy" target="_blank">codepen.io</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>색</h2>
+						<p>텍스트에 컬러를 부여할 때는 color 효과를 사용한다. <br>CSS에서는 색상을 지정하는 3가지 방법이 있는데 아래와 같다.</p>
+						<table>
+							<tbody>
+								<tr>
+									<th>Hex</th>
+									<td>16진수로 색상 값을 표현, <br>#ff0000 (붉은색), #00ff00(초록), #0000ff(파랑)</td>
+								<tr>
+								<tr>
+									<th>RGB</th>
+									<td>붉은색, 초록, 파랑의 값을 조합해서 색상 값을 표현,  <br>RGB(255,0,0), RGB(0,255,0), RGB(0,0,255)</td>
+								<tr>
+								<tr>
+									<th>별명</th>
+									<td>red, blue, green등</td>
+								<tr>
+							</tbody>
+						</table>
+						<p><a href="http://codepen.io/kjy2143/pen/MwbXzJ">codepen.io</a></p>
+					</section>
+
+					<section>
+						<h2>정렬</h2>
+						<p>텍스트를 정렬하기 위해서는 정렬하고자 하는 텍스트를 태그로 감싸고 이 태그에 text-align 효과를 지정한다. <br>CSS에서는 4가지 형태의 정렬방식을 지원한다</p>
+
+						<table>
+							<tbody>
+								<tr>
+									<td>left</td>
+									<td>왼쪽 정렬</td>
+								</tr>
+								<tr>
+									<td>right</td>
+									<td>오른쪽 정렬</td>
+								</tr>
+								<tr>
+									<td>center</td>
+									<td>가운데 정렬</td>
+								</tr>
+								<tr>
+									<td>justify</td>
+									<td>양쪽 정렬, 텍스트 간의 간격을 조정해서&nbsp;행의 간격을 일치시킴</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 				</section>
 

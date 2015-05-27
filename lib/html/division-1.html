@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>division-1</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+		<style>
+		.notice_wrap {position:relative; width:370px; border-bottom:1px solid #c2c2c1;}
+		.tab {width:264px; height:22px; margin-bottom:-1px; padding-left:1px; background:url('../img/division-1.png') no-repeat 0 0;}
+		.tab.appointment {background-position:0 -22px;}
+		.tab.recruit {background-position:0 -44px;}
+		.tab.bid {background-position:0 -66px;}
+			.tab li {float:left; }
+				.tab li a {display:block; width:66px; height:22px; text-indent:-999em;}
+		.more {position:absolute; top:8px; right:0; background:url('../img/division-1.png') no-repeat 0 -88px;}
+			.more a {display:block; width:30px; height:10; text-indent:-999em;}
+		</style>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('.tab > li').on('mouseover', function() {
+				$(this).parent()
+					.attr('class', 'tab')
+					.addClass($(this).attr('class'))
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div class="notice_wrap">
+			<ul class="tab notice">
+				<li class="notice"><a href="#">공지사항</a></li>
+				<li class="appointment"><a href="#">인사발령</a></li>
+				<li class="recruit"><a href="#">채용</a></li>
+				<li class="bid"><a href="#">입찰</a></li>
+			</ul>
+			<p class="more">
+				<a href="#">more</a>
+			</p>
+		</div>
+	</body>
+</html>
